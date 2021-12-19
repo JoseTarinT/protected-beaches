@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*html {
+    height: 100%;
+}*/
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url("./Images/beachPhoto.jpg") center no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    min-height: max-content;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animate {
+    0%, 100%{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/beachPhoto.jpg);
+        height: 100%;
+        background-attachment: fixed;
+    }
+    50%{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/sydneyPhoto.jpg);
+        height: 100%;
+        background-attachment: fixed;
+    }
+}
+
+.nav {
+    background-color: transparent;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 36px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.menu {
+    color: white;
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+
+h1 {
+    color: white;
+    padding: 24px 60px;
+    text-align: center;
+}
+
+.weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recomendation {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2em;
+    margin-top: 1.75em;
+    border-radius: 25px;
+    line-height: 1.5em;
+    min-width: 420px;
+}
+
+.recomendation h3 {
+    line-height: 1.5em;
+}
+
+.beaches p {
+    font-size: 1.35;
+}
+
+.beaches a {
+    color: white;
+}
+
+.weatherContainer {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2em;
+    /*margin-top: 2em;*/
+    border-radius: 25px;
+    line-height: 1.25em;
+    width: 100%;
+    max-width: 420px;
+    line-height: 1.5em;
+}
+
+.weatherContainer h2 {
+    line-height: 1.5em;
+    /*! padding: 0px; */
+    top: -18px;
+    position: relative;
+    text-align: center;
+  }
+
+.weatherContainer.loading {
+    visibility: hidden;
+    position: relative;
+}
+
+.weatherContainer.loading::after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+}
+
+.temperature {
+    display: flex;
+    justify-content: center;
+    line-height: 2em;
+    font-size: 2.5em;
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-top: -2em;
+}
+
+.windspeed {
+    display: flex;
+    cursor: pointer;
+}
+
+.list {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 60px 45px;
+    margin: 0 2em;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    line-height: 1.25em;
+    /*display: flex;
+    justify-content: center;*/
+}
+
+.containerList {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmaX(300px,1fr));
+}
+
+.card {
+    padding: 15px;
+    margin: 25px;
+    border: 1px green solid;
+    box-shadow: 6px 6px 18px #7e937f;
+}
+
+.card h3 {
+    line-height: 2em;
+    color: rgb(216, 216, 216);
+}
+
+.card p {
+    line-height: 1.5em;
+    color: white;
+}
+
+@media (max-width: 1210px) {
+    body {
+        background-attachment: fixed;
+    }
+}
+
+
+
+/*const windSpeedsection = document.querySelector(".windSpeed")
+const windspeedspan = document.querySelector(".windspan");
+        
+        
+const temperature = temp;
+floorTemp = Math.round(temperature)
+
+document.querySelector(".temperature").innerText = floorTemp + "°C";
+document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
+document.querySelector(".infoWeather").innerText = main;
+document.querySelector(".description").innerText = description;
+document.querySelector(".windDir").innerText = "Wind Direction: " + compassWind;
+/*const windSpeed = document.querySelector(".windSpeed");*/
+/*windSpeedsection.addEventListener('click', () => {
+    if (windspeedspan.textContent === m/s) {
+        let KMperH = function mpsTOkmperh(speed) {
+            return speed * (18/5);
+        };
+        console.log(KMperH)
+        KMperH = Math.round(KMperH);
+        document.querySelector(".windSpe").innerHTML = "Wind Speed: " + KMperH + " Km/h";*/
