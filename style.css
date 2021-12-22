@@ -9,11 +9,19 @@
 }*/
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url("./Images/beachPhoto.jpg") center no-repeat;
-    background-size: cover;
+    background-color: #f7f7f7;
     font-family: 'Poppins', sans-serif;
     height: 100vh;
     min-height: max-content;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url("./Images/beachPhoto.jpg") center no-repeat;
+    background-size: cover;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     animation-name: animate;
     animation-direction: alternate-reverse;
@@ -69,19 +77,13 @@ h1 {
     text-align: center;
 }
 
-.weather {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .recomendation {
     color: white;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
     padding: 2em;
+    margin: 1em;
     margin-top: 1.75em;
     border-radius: 25px;
     line-height: 1.5em;
@@ -104,12 +106,15 @@ h1 {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2em;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
     /*margin-top: 2em;*/
     border-radius: 25px;
     line-height: 1.25em;
     width: 100%;
     max-width: 420px;
     line-height: 1.5em;
+    box-shadow: white 6px 6px 12px;
 }
 
 .weatherContainer h2 {
@@ -192,32 +197,14 @@ h1 {
     color: white;
 }
 
+.map {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
 @media (max-width: 1210px) {
     body {
         background-attachment: fixed;
     }
 }
-
-
-
-/*const windSpeedsection = document.querySelector(".windSpeed")
-const windspeedspan = document.querySelector(".windspan");
-        
-        
-const temperature = temp;
-floorTemp = Math.round(temperature)
-
-document.querySelector(".temperature").innerText = floorTemp + "°C";
-document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
-document.querySelector(".infoWeather").innerText = main;
-document.querySelector(".description").innerText = description;
-document.querySelector(".windDir").innerText = "Wind Direction: " + compassWind;
-/*const windSpeed = document.querySelector(".windSpeed");*/
-/*windSpeedsection.addEventListener('click', () => {
-    if (windspeedspan.textContent === m/s) {
-        let KMperH = function mpsTOkmperh(speed) {
-            return speed * (18/5);
-        };
-        console.log(KMperH)
-        KMperH = Math.round(KMperH);
-        document.querySelector(".windSpe").innerHTML = "Wind Speed: " + KMperH + " Km/h";*/
