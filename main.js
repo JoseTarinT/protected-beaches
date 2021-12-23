@@ -1,5 +1,5 @@
 let weather = {
-    apiKey : "your API key",
+    apiKey : "31a8e3335d93a108cfcf043524e70c08",
     fetchWeather: function () {
         fetch(
             "https://api.openweathermap.org/data/2.5/weather?q=Merimbula&units=metric&appid=31a8e3335d93a108cfcf043524e70c08"
