@@ -211,7 +211,7 @@ h1 {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 500px) {
     .hero {
         justify-content: space-between;
     }
