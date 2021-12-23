@@ -107,7 +107,7 @@ h1 {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2em;
     margin: 0 auto;
-    margin-bottom: 1.5em;
+    margin-bottom: .5em;
     /*margin-top: 2em;*/
     border-radius: 25px;
     line-height: 1.25em;
@@ -197,14 +197,51 @@ h1 {
     color: white;
 }
 
-.map {
+.mapa {
     display: flex;
     justify-content: center;
-    margin: 1em;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    max-width: 420px; 
 }
 
 @media (max-width: 1210px) {
     body {
         background-attachment: fixed;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero {
+        justify-content: space-between;
+    }
+    .hero h1 {
+        font-size: 1.35em;
+        padding: 24px 27px;
+    }
+    .nav {
+        margin-top: -10px;
+    }
+    .weatherContainer {
+        max-width: 339px;
+        box-shadow: white 0px 0px 9px 6px;
+        padding: 1.75em;
+        margin-top: 1.5em;
+    }
+    .temperature {
+        line-height: 1.5em;
+        font-size: 2.25em;
+    }
+    .recomendation {
+        margin: 0;
+        padding: 1em 2em;
+    }
+    .protected {
+        line-height: 1.5em;
+        font-size: 1em;
+    }
+    .beaches {
+        font-size: 1.1em;
+        line-height: 1.5em;
     }
 }
