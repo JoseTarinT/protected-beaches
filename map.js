@@ -13,7 +13,7 @@ function initMap(){
     //Markers
 
     const marker = new google.maps.Marker({
-        position: {lat: -36.89580145144116,lng: 149.92407974969328},
+        position: {lat: -36.89580145144116, lng: 149.92407974969328},
         map: map
     });
 }
