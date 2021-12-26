@@ -18,7 +18,7 @@ body {
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url("./Images/beachPhoto.jpg") center no-repeat;
     background-size: cover;
-    max-height: 100vh;
+    /*max-height: 100vh;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,12 +35,12 @@ body {
 @keyframes animate {
     0%, 100%{
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/beachPhoto.jpg);
-        height: 100%;
+        /*height: calc(100vh + 162px);*/
         background-attachment: fixed;
     }
     50%{
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/sydneyPhoto.jpg);
-        height: 100%;
+        /*height: calc(100vh + 162px);*/
         background-attachment: fixed;
     }
 }
@@ -107,7 +107,7 @@ h1 {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 2em;
     margin: 0 auto;
-    margin-bottom: .5em;
+    margin-bottom: 4.5em;
     /*margin-top: 2em;*/
     border-radius: 25px;
     line-height: 1.25em;
@@ -202,16 +202,29 @@ h1 {
     justify-content: center;
     margin: 0 auto;
     margin-top: 1.5em;
-    max-width: 420px; 
+    max-width: 800px; 
 }
 
-@media (max-width: 1210px) {
+@media (max-width: 991.98px) {
     body {
         background-attachment: fixed;
     }
+    .hero {
+        justify-content: space-between;
+    }
+    @keyframes animate {
+        0%, 100%{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/beachPhoto.jpg);
+            height: calc(100vh + 162px);
+        }
+        50%{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/sydneyPhoto.jpg);
+            height: calc(100vh + 162px);
+        }
+    }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 575.98px) {
     .hero {
         justify-content: space-between;
     }
