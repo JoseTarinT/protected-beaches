@@ -197,7 +197,7 @@ h1 {
     color: white;
 }
 
-.mapa {
+#map {
     display: flex;
     justify-content: center;
     margin: 0 auto;
