@@ -55,7 +55,7 @@ let weather = {
         
         if (speed === 0 || speed < 3) {
             document.querySelector(".protected").innerHTML = "The wind is currently very light. You can enjoy any of the beaches.",
-            document.querySelector(".beaches").innerHTML = "To see all the beaches in Merimbula, Pambula or Tura, " + '<a target="_blank" href="beaches.html">Click here</a>';
+            document.querySelector(".beaches").innerHTML = "To see all the beaches in Merimbula, Pambula or Tura, " + '<a href="beaches.html">Click here</a>';
         }
         else if (compassWind == "N" || compassWind == "NNW" || compassWind == "NNE"){
             document.querySelector(".protected").innerHTML = "By the direction of the wind, the beaches that are more protected are:",
