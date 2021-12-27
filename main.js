@@ -125,7 +125,7 @@ function initMap(){
         iconImage: icons,
         content: '<h2>Mitchies Jetty</h2>'});
     addMarker({
-        coords: {lat: -36.86078229680881, lng: 149.93474908095348},
+        coords: {lat: -36.862254022504445, lng: 149.93510497331488},
         iconImage: icons,
         content: '<h2>Tura Beach</h2>'});
     addMarker({
