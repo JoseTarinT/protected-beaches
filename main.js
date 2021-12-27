@@ -42,6 +42,7 @@ let weather = {
                 windSpe.innerHTML = "Wind Speed: " + speed;
             }
         });
+        
         document.querySelector(".humid").innerText = "Humidity: " + humidity + "%";
 
         const NNNWNNE = [" Spencer Park", " Bar Beach"]
@@ -94,3 +95,89 @@ let weather = {
 };
 
 weather.fetchWeather();
+
+function initMap(){
+
+    //Map options
+
+    var options = {
+        zoom: 11,
+        center: { lat: -36.888011, lng: 149.906328},
+    }
+
+    //Add map
+    map = new google.maps.Map(document.getElementById('map'), options);
+
+    //Markers
+    addMarker({
+        coords: {lat: -36.89580145144116, lng: 149.92407974969328},
+        iconImage: icons,
+        content: '<h2>1</h2>'});
+    addMarker({
+        coords: {lat: -36.89748332145616, lng: 149.9156936453022},
+        iconImage: icons,
+        content: '<h2>2</h2>'});
+    addMarker({
+        coords: {lat: -36.89419938367968, lng: 149.9191310611633},
+        iconImage: icons,
+        content: '<h2>3</h2>'});
+    addMarker({
+        coords: {lat: -36.894294089341486, lng: 149.92911983711372},
+        iconImage: icons,
+        content: '<h2>4</h2>'});
+    addMarker({
+        coords: {lat: -36.882925182658525, lng: 149.93020514201342},
+        iconImage: icons,
+        content: '<h2>5</h2>'});
+    addMarker({
+        coords: {lat: -36.84653651384741, lng: 149.93601562425445},
+        iconImage: icons,
+        content: '<h2>6</h2>'});
+    addMarker({
+        coords: {lat: -36.834963715996906, lng: 149.93434232327687},
+        iconImage: icons,
+        content: '<h2>7</h2>'});
+    addMarker({
+        coords: {lat: -36.888605520579205, lng: 149.91944049471292},
+        iconImage: icons,
+        content: '<h2>8</h2>'});
+    addMarker({
+        coords: {lat: -36.940684015686486, lng: 149.90927307425812},
+        iconImage: icons,
+        content: '<h2>9</h2>'});
+    addMarker({
+        coords: {lat: -36.94483882261285, lng: 149.91355310744058},
+        iconImage: icons,
+        content: '<h2>10</h2>'});
+    addMarker({
+        coords: {lat: -36.949504995781865, lng: 149.91024940778772},
+        iconImage: icons,
+        content: '<h2>11</h2>'});
+    addMarker({
+        coords: {lat: -36.95274733072922, lng: 149.90585565971867},
+        iconImage: icons,
+        content: '<h2>12</h2>'});
+    addMarker({
+        coords: {lat: -36.94748630063176, lng: 149.92165784902573},
+        iconImage: icons,
+        content: '<h2>13</h2>'});
+
+    function addMarker(props){
+        const marker = new google.maps.Marker({
+            position: props.coords,
+            map: map,
+            icon: props.iconImage,
+        });
+
+        //Check content
+        if(props.content){
+            let infoWindow = new google.maps.InfoWindow({
+                content: props.content
+            });
+
+            marker.addListener('click', function(){
+                infoWindow.open(map, marker);
+            });
+        }
+    }    
+}
