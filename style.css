@@ -207,6 +207,23 @@ h1 {
     max-width: 800px; 
 }
 
+.footer {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.footer p {
+    font-size: 1.25rem;
+	line-height: 1.25rem;
+}
+
+.footer a {
+    color: white;
+}
+
 @media (max-width: 991.98px) {
     body {
         background-attachment: fixed;
@@ -227,6 +244,9 @@ h1 {
 }
 
 @media (max-width: 575.98px) {
+    body {
+        background-color: rgb(23, 95, 196);
+    }
     .hero {
         justify-content: space-between;
     }
@@ -258,5 +278,13 @@ h1 {
     .beaches {
         font-size: 1.1em;
         line-height: 1.5em;
+    }
+    .containerList {
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/beachPhoto.jpg);
+        background-size: cover;
     }
 }
