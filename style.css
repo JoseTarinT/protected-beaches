@@ -244,9 +244,6 @@ h1 {
 }
 
 @media (max-width: 575.98px) {
-    body {
-        background-color: rgb(23, 95, 196);
-    }
     .hero {
         justify-content: space-between;
     }
