@@ -108,6 +108,9 @@ function initMap(){
     //Add map
     map = new google.maps.Map(document.getElementById('map'), options);
 
+    //Set the markers
+    const icons = "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png"
+
     //Markers
     addMarker({
         coords: {lat: -36.89580145144116, lng: 149.92407974969328},
