@@ -115,59 +115,59 @@ function initMap(){
     addMarker({
         coords: {lat: -36.89580145144116, lng: 149.92407974969328},
         iconImage: icons,
-        content: '<h2>Bar Beach</h2>'});
+        content: '<h4>Bar Beach</h4>'});
     addMarker({
         coords: {lat: -36.89748332145616, lng: 149.9156936453022},
         iconImage: icons,
-        content: '<h2>Main Beach<</h2>'});
+        content: '<h4>Main Beach<</h4>'});
     addMarker({
         coords: {lat: -36.89419938367968, lng: 149.9191310611633},
         iconImage: icons,
-        content: '<h2>Mitchies Jetty</h2>'});
+        content: '<h4>Mitchies Jetty</h4>'});
     addMarker({
         coords: {lat: -36.862254022504445, lng: 149.93510497331488},
         iconImage: icons,
-        content: '<h2>Tura Beach</h2>'});
+        content: '<h4>Tura Beach</h4>'});
     addMarker({
         coords: {lat: -36.894294089341486, lng: 149.92911983711372},
         iconImage: icons,
-        content: '<h2>Middle Beach</h2>'});
+        content: '<h4>Middle Beach</h4>'});
     addMarker({
         coords: {lat: -36.882925182658525, lng: 149.93020514201342},
         iconImage: icons,
-        content: '<h2>Short Point Beach</h2>'});
+        content: '<h4>Short Point Beach</h4>'});
     addMarker({
         coords: {lat: -36.84653651384741, lng: 149.93601562425445},
         iconImage: icons,
-        content: '<h2>Dolphin Cove</h2>'});
+        content: '<h4>Dolphin Cove</h4>'});
     addMarker({
         coords: {lat: -36.834963715996906, lng: 149.93434232327687},
         iconImage: icons,
-        content: '<h2>North Tura Beach</h2>'});
+        content: '<h4>North Tura Beach</h4>'});
     addMarker({
         coords: {lat: -36.888605520579205, lng: 149.91944049471292},
         iconImage: icons,
-        content: '<h2>Spencer Park</h2>'});
+        content: '<h4>Spencer Park</h4>'});
     addMarker({
         coords: {lat: -36.940684015686486, lng: 149.90927307425812},
         iconImage: icons,
-        content: '<h2>Pambula Beach</h2>'});
+        content: '<h4>Pambula Beach</h4>'});
     addMarker({
         coords: {lat: -36.94483882261285, lng: 149.91355310744058},
         iconImage: icons,
-        content: '<h2>Lions Park Beach</h2>'});
+        content: '<h4>Lions Park Beach</h4>'});
     addMarker({
         coords: {lat: -36.949504995781865, lng: 149.91024940778772},
         iconImage: icons,
-        content: '<h2>Pambula Rivermouth</h2>'});
+        content: '<h4>Pambula Rivermouth</h4>'});
     addMarker({
         coords: {lat: -36.95274733072922, lng: 149.90585565971867},
         iconImage: icons,
-        content: '<h2>Bar Mouth Beach</h2>'});
+        content: '<h4>Bar Mouth Beach</h4>'});
     addMarker({
         coords: {lat: -36.94748630063176, lng: 149.92165784902573},
         iconImage: icons,
-        content: '<h2>Severs Beach</h2>'});
+        content: '<h4>Severs Beach</h4>'});
 
     function addMarker(props){
         const marker = new google.maps.Marker({
