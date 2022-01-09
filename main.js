@@ -208,12 +208,3 @@ function initMap(){
 
     weather.fetchWeather();
 }
-
-    
-
-    
-
-    
-
-        
-}
