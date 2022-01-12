@@ -25,7 +25,7 @@ body {
 }
 
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url("./Images/beachPhoto.jpg") center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url("./Images/beachPhoto.jpg") center no-repeat;
     background-size: cover;
     /*max-height: 100vh;*/
     display: flex;
