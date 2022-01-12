@@ -15,6 +15,15 @@ body {
     min-height: max-content;
 }
 
+.navBeaches {
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 36px;
+}
+
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url("./Images/beachPhoto.jpg") center no-repeat;
     background-size: cover;
@@ -22,27 +31,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    animation-name: animate;
-    animation-direction: alternate-reverse;
-    animation-duration: 30s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes animate {
-    0%, 100%{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/beachPhoto.jpg);
-        /*height: calc(100vh + 162px);*/
-        background-attachment: fixed;
-    }
-    50%{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/sydneyPhoto.jpg);
-        /*height: calc(100vh + 162px);*/
-        background-attachment: fixed;
-    }
 }
 
 .nav {
@@ -232,16 +220,6 @@ h1 {
     .hero {
         justify-content: space-between;
     }
-    @keyframes animate {
-        0%, 100%{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/beachPhoto.jpg);
-            height: calc(100vh + 162px);
-        }
-        50%{
-            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/sydneyPhoto.jpg);
-            height: calc(100vh + 162px);
-        }
-    }
 }
 
 @media (max-width: 575.98px) {
@@ -280,9 +258,5 @@ h1 {
     .containerList {
         display: flex;
         flex-direction: column;
-    }
-    .card {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/beachPhoto.jpg);
-        background-size: cover;
     }
 }
