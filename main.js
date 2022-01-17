@@ -204,7 +204,19 @@ function initMap(){
                 }
             }
         },
-    };
 
+        fetchTemperature: function () {
+            
+            const tempDisplay = document.querySelector('.wtrtmp')
+            fetch('http://localhost:3090/result')
+                .then(response => {return response.json()})
+                .then(data => {
+                    const temp = data
+                    tempDisplay.innerHTML = "Water Temperature: " + temp + "°C"
+                    console.log(temp)
+                })
+        }
+    }
+    weather.fetchTemperature()
     weather.fetchWeather();
 }
