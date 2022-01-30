@@ -215,6 +215,14 @@ function initMap(){
                     tempDisplay.innerHTML = "Water Temperature: " + temp + "°C"
                     console.log(temp)
                 })
+
+            const tidesDisplay = document.querySelector('.tide')
+            fetch('http://localhost:3090/tides')
+                .then(response => {return response.json()})
+                .then(data => {
+                    const tides = data
+                    tidesDisplay.innerHTML = "Tides info: " + tides
+                })
         }
     }
     weather.fetchTemperature()
