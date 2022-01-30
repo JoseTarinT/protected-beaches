@@ -213,7 +213,6 @@ function initMap(){
                 .then(data => {
                     const temp = data
                     tempDisplay.innerHTML = "Water Temperature: " + temp + "°C"
-                    console.log(temp)
                 })
 
             const tidesDisplay = document.querySelector('.tide')
