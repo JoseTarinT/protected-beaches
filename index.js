@@ -4,7 +4,6 @@ const { Cluster } = require("puppeteer-cluster")
 const cors = require('cors')
 const app = express()
 app.use(cors())
-let server = app.listen()
 
 app.get('/result', (req, res) => {
     (async () => {
@@ -61,7 +60,3 @@ app.get('/tides', (req, res) => {
 })
 
 app.listen(Port, () => console.log(`server running on PORT ${Port}`))
-server.on('clientError', (err, socket) => {
-    console.error(err);
-    socket.end('HTTP/1.1 400 Bad Request\r\n\r\n');
-  });
