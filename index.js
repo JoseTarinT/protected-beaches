@@ -59,4 +59,4 @@ app.get('/tides', (req, res) => {
 
 })
 
-app.listen(process.env.PORT || localhostPort, () => console.log(`server running on PORT ${PORT}`))
+app.listen(process.env.PORT || localhostPort, () => console.log(`server running on PORT ${localhostPort}`))
