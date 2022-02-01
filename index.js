@@ -4,6 +4,7 @@ const { Cluster } = require("puppeteer-cluster")
 const cors = require('cors')
 const app = express()
 app.use(cors())
+let server = app.listen()
 
 app.get('/result', (req, res) => {
     (async () => {
