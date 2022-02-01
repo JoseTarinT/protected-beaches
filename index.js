@@ -6,6 +6,10 @@ const app = express()
 app.use(cors())
 
 app.get('/result', (req, res) => {
+    console.log('Hello')
+})
+
+app.get('/result', (req, res) => {
     (async () => {
         const cluster = await Cluster.launch({
             concurrency: Cluster.CONCURRENCY_CONTEXT,
