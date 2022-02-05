@@ -207,6 +207,7 @@ function initMap(){
 
         fetchTemperature: function () {
 
+            const tempDisplay = document.querySelector('.wtrtmp')
             fetch('https://backend-protected-beaches.herokuapp.com/result' || 'http://localhost:3090/result')
                 .then(response => {return response.json()})
                 .then(data => {
