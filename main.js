@@ -206,9 +206,8 @@ function initMap(){
         },
 
         fetchTemperature: function () {
-            
-            const tempDisplay = document.querySelector('.wtrtmp')
-            fetch('https://protected-beaches.herokuapp.com/result' || 'http://localhost:3090/result')
+
+            fetch('https://backend-protected-beaches.herokuapp.com/result' || 'http://localhost:3090/result')
                 .then(response => {return response.json()})
                 .then(data => {
                     const temp = data
@@ -216,7 +215,7 @@ function initMap(){
                 })
 
             const tidesDisplay = document.querySelector('.tide')
-            fetch('https://protected-beaches.herokuapp.com/tides' || 'http://localhost:3090/tides')
+            fetch('https://backend-protected-beaches.herokuapp.com/tides' || 'http://localhost:3090/tides')
                 .then(response => {return response.json()})
                 .then(data => {
                     const tides = data
