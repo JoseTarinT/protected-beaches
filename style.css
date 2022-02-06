@@ -137,6 +137,20 @@ h1 {
     text-transform: capitalize;
 }
 
+.skeleton {
+    animation: waterTmp-loading 1s linear infinite alternate;
+}
+
+@keyframes waterTmp-loading {
+    0% {
+        color: grey;
+    }
+
+    100% {
+        color: white;
+    }
+}
+
 .flex {
     display: flex;
     align-items: center;
