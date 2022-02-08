@@ -180,6 +180,15 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmaX(300px,1fr));
 }
 
+.card {
+    padding: 15px;
+    margin: 25px;
+    border: 1px green solid;
+    box-shadow: 6px 6px 18px #7e937f;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/beachPhoto.jpg);
+        background-size: cover;
+}
+
 .cardNT {
     padding: 15px;
     margin: 25px;
