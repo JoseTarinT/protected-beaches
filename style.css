@@ -180,12 +180,39 @@ h1 {
     grid-template-columns: repeat(auto-fit, minmaX(300px,1fr));
 }
 
-.card {
+.cardNT {
     padding: 15px;
     margin: 25px;
     border: 1px green solid;
     box-shadow: 6px 6px 18px #7e937f;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/beachPhoto.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/NorthTura.jpg);
+        background-size: cover;
+}
+
+.cardDC {
+    padding: 15px;
+    margin: 25px;
+    border: 1px green solid;
+    box-shadow: 6px 6px 18px #7e937f;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/DolphinCove.jpg);
+        background-size: cover;
+}
+
+.cardBB {
+    padding: 15px;
+    margin: 25px;
+    border: 1px green solid;
+    box-shadow: 6px 6px 18px #7e937f;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/BarBeach.jpg);
+        background-size: cover;
+}
+
+.cardM {
+    padding: 15px;
+    margin: 25px;
+    border: 1px green solid;
+    box-shadow: 6px 6px 18px #7e937f;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/Main.jpg);
         background-size: cover;
 }
 
