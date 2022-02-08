@@ -181,6 +181,7 @@ h1 {
 }
 
 .card {
+    color: white;
     padding: 15px;
     margin: 25px;
     border: 1px green solid;
@@ -190,6 +191,7 @@ h1 {
 }
 
 .cardNT {
+    color: white;
     padding: 15px;
     margin: 25px;
     border: 1px green solid;
@@ -199,6 +201,7 @@ h1 {
 }
 
 .cardDC {
+    color: white;
     padding: 15px;
     margin: 25px;
     border: 1px green solid;
@@ -208,6 +211,7 @@ h1 {
 }
 
 .cardBB {
+    color: white;
     padding: 15px;
     margin: 25px;
     border: 1px green solid;
@@ -217,6 +221,7 @@ h1 {
 }
 
 .cardM {
+    color: white;
     padding: 15px;
     margin: 25px;
     border: 1px green solid;
