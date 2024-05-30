@@ -3,7 +3,6 @@ import config from "./config.js";
 //Map
 (function () {
   let weather = {
-    apiKey: envVariables.api,
     fetchWeather: function () {
       fetch(config.API)
         .then((response) => response.json())
