@@ -1,13 +1,11 @@
-import envVariables from "./environments.js";
+import config from "./config.js";
 
 //Map
 (function () {
   let weather = {
     apiKey: envVariables.api,
     fetchWeather: function () {
-      fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=Merimbula&units=metric&appid=${this.apiKey}`
-      )
+      fetch(config.API)
         .then((response) => response.json())
         .then((data) => this.displayWeather(data));
     },
