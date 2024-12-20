@@ -8,4 +8,4 @@ The info will be extracted using "openweathermap API" and the map using "Google 
 
 Link: https://josetarint.github.io/protected-beaches/index.html
 
-*Still being improved.
+*Work in progress.
