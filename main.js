@@ -20,7 +20,10 @@ window.initMap = initMap;
 (function () {
   let weather = {
     fetchWeather: function () {
-      fetch("web-production-c94c2.up.railway.app/" || "http://localhost:3080/")
+      fetch(
+        "https://web-production-c94c2.up.railway.app/" ||
+          "http://localhost:3080/"
+      )
         .then((response) => response.json())
         .then((data) => this.displayWeather(data));
     },
