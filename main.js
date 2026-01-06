@@ -20,10 +20,7 @@ window.initMap = initMap;
 (function () {
   let weather = {
     fetchWeather: function () {
-      fetch(
-        "http://localhost:3080/" ||
-          "https://backend-protected-beaches.herokuapp.com/"
-      )
+      fetch("http://localhost:3080/" || "web-production-c94c2.up.railway.app/")
         .then((response) => response.json())
         .then((data) => this.displayWeather(data));
     },
@@ -322,7 +319,7 @@ window.initMap = initMap;
       const tempDisplay = document.querySelector(".wtrtmp");
       fetch(
         "http://localhost:3080/result" ||
-          "https://backend-protected-beaches.herokuapp.com/result"
+          "https://web-production-c94c2.up.railway.app/result"
       )
         .then((response) => response.json())
         .then((data) => {
@@ -336,7 +333,7 @@ window.initMap = initMap;
       const tidesDisplay = document.querySelector(".tide");
       fetch(
         "http://localhost:3080/tides" ||
-          "https://backend-protected-beaches.herokuapp.com/tides"
+          "https://web-production-c94c2.up.railway.app/tides"
       )
         .then((response) => {
           return response.json();
