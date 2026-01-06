@@ -20,7 +20,7 @@ window.initMap = initMap;
 (function () {
   let weather = {
     fetchWeather: function () {
-      fetch("http://localhost:3080/" || "web-production-c94c2.up.railway.app/")
+      fetch("web-production-c94c2.up.railway.app/" || "http://localhost:3080/")
         .then((response) => response.json())
         .then((data) => this.displayWeather(data));
     },
@@ -318,8 +318,8 @@ window.initMap = initMap;
     fetchTemperature: function () {
       const tempDisplay = document.querySelector(".wtrtmp");
       fetch(
-        "http://localhost:3080/result" ||
-          "https://web-production-c94c2.up.railway.app/result"
+        "https://web-production-c94c2.up.railway.app/result" ||
+          "http://localhost:3080/result"
       )
         .then((response) => response.json())
         .then((data) => {
@@ -332,8 +332,8 @@ window.initMap = initMap;
 
       const tidesDisplay = document.querySelector(".tide");
       fetch(
-        "http://localhost:3080/tides" ||
-          "https://web-production-c94c2.up.railway.app/tides"
+        "https://web-production-c94c2.up.railway.app/tides" ||
+          "http://localhost:3080/tides"
       )
         .then((response) => {
           return response.json();
