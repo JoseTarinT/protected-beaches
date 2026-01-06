@@ -1,10 +1,26 @@
-import config from "./config.js";
+// Declare the map variable globally
+let map;
 
-//Map
+// Define the initMap function globally
+function initMap() {
+  console.log("Initializing map...");
+  const options = {
+    zoom: 11,
+    center: { lat: -36.888011, lng: 149.906328 },
+    mapId: "DEMO_MAP_ID",
+  };
+
+  // Initialize the map
+  map = new google.maps.Map(document.getElementById("map"), options);
+}
+
+// Attach initMap to the global window object
+window.initMap = initMap;
+
 (function () {
   let weather = {
     fetchWeather: function () {
-      fetch(config.API)
+      fetch("https://backend-protected-beaches.herokuapp.com/" || "http://localhost:3080/")
         .then((response) => response.json())
         .then((data) => this.displayWeather(data));
     },
@@ -164,15 +180,6 @@ import config from "./config.js";
       }
       document.querySelector(".weathercontainer").classList.remove("loading");
 
-      //Map options
-      var options = {
-        zoom: 11,
-        center: { lat: -36.888011, lng: 149.906328 },
-      };
-
-      //Add map
-      map = new google.maps.Map(document.getElementById("map"), options);
-
       //Set the markers
       const icons =
         "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
@@ -281,11 +288,18 @@ import config from "./config.js";
         content: contentText[12],
       });
 
-      function addMarker(props) {
-        const marker = new google.maps.Marker({
+      async function addMarker(props) {
+        const { AdvancedMarkerElement } = await google.maps.importLibrary(
+          "marker"
+        );
+
+        const iconElement = document.createElement("img");
+        iconElement.src = props.iconImage;
+        const marker = new AdvancedMarkerElement({
           position: props.coords,
           map: map,
-          icon: props.iconImage,
+          content: iconElement,
+          gmpClickable: true,
         });
 
         //Check content

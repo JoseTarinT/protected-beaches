@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*html {
@@ -9,309 +9,314 @@
 }*/
 
 body {
-    background-color: #f7f7f7;
-    font-family: 'Poppins', sans-serif;
-    height: 100vh;
-    min-height: max-content;
+  background-color: #f7f7f7;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  min-height: max-content;
 }
 
 .navBeaches {
-    background-color: black;
-    display: flex;
-    color: white;
-    justify-content: space-between;
-    align-items: center;
-    padding: 27px 36px;
+  background-color: black;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 36px;
 }
 
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) , url("./Images/beachPhoto.jpg") center no-repeat;
-    background-size: cover;
-    /*max-height: 100vh;*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./Images/beachPhoto.jpg") center no-repeat;
+  background-size: cover;
+  /*max-height: 100vh;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .nav {
-    background-color: transparent;
-    display: flex;
-    color: white;
-    justify-content: space-between;
-    align-items: center;
-    padding: 27px 36px;
+  background-color: transparent;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 36px;
 }
 
 .logo a {
-    color: white;
-    text-decoration: none;
-    font-size: 2em;
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
 }
 
 .menu {
-    color: white;
-    list-style: none;
+  color: white;
+  list-style: none;
 }
 
 .menu a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
-
 h1 {
-    color: white;
-    padding: 24px 60px;
-    text-align: center;
+  color: white;
+  padding: 24px 60px;
+  text-align: center;
 }
 
 .recomendation {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 2em;
-    margin: 1em;
-    margin-top: 1.75em;
-    border-radius: 25px;
-    line-height: 1.5em;
-    min-width: 320px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2em;
+  margin: 1em;
+  margin-top: 1.75em;
+  border-radius: 25px;
+  line-height: 1.5em;
+  min-width: 320px;
 }
 
 .recomendation h3 {
-    line-height: 1.5em;
+  line-height: 1.5em;
 }
 
 .beaches p {
-    font-size: 1.35;
+  font-size: 1.35;
 }
 
 .beaches a {
-    color: white;
+  color: white;
 }
 
 .weatherContainer {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 2em;
-    margin: 0 auto;
-    margin-bottom: 4.5em;
-    /*margin-top: 2em;*/
-    border-radius: 25px;
-    line-height: 1.25em;
-    width: 100%;
-    max-width: 420px;
-    line-height: 1.5em;
-    box-shadow: white 6px 6px 12px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2em;
+  margin: 0 auto;
+  margin-bottom: 4.5em;
+  /*margin-top: 2em;*/
+  border-radius: 25px;
+  line-height: 1.25em;
+  width: 100%;
+  max-width: 420px;
+  line-height: 1.5em;
+  box-shadow: white 6px 6px 12px;
 }
 
 .weatherContainer h2 {
-    line-height: 1.5em;
-    /*! padding: 0px; */
-    top: -18px;
-    position: relative;
-    text-align: center;
-  }
+  line-height: 1.5em;
+  /*! padding: 0px; */
+  top: -18px;
+  position: relative;
+  text-align: center;
+}
 
 .weatherContainer.loading {
-    visibility: hidden;
-    position: relative;
+  visibility: hidden;
+  position: relative;
 }
 
 .weatherContainer.loading::after {
-    visibility: visible;
-    content: "Loading...";
-    color: white;
-    position: absolute;
-    top: 0;
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
 }
 
 .temperature {
-    display: flex;
-    justify-content: center;
-    line-height: 2em;
-    font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+  line-height: 2em;
+  font-size: 2.5em;
 }
 
 .description {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .skeleton {
-    animation: waterTmp-loading 1s linear infinite alternate;
+  animation: waterTmp-loading 1s linear infinite alternate;
 }
 
 @keyframes waterTmp-loading {
-    0% {
-        color: grey;
-    }
+  0% {
+    color: grey;
+  }
 
-    100% {
-        color: white;
-    }
+  100% {
+    color: white;
+  }
 }
 
 .flex {
-    display: flex;
-    align-items: center;
-    margin-top: -2em;
+  display: flex;
+  align-items: center;
+  margin-top: -2em;
 }
 
 .windspeed {
-    display: flex;
-    cursor: pointer;
+  display: flex;
+  cursor: pointer;
 }
 
 .list {
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 60px 45px;
-    margin: 0 2em;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    line-height: 1.25em;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 60px 45px;
+  margin: 0 2em;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  line-height: 1.25em;
 }
 
 .containerList {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmaX(300px,1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmaX(300px, 1fr));
 }
 
 .card {
-    color: white;
-    padding: 15px;
-    margin: 25px;
-    border: 1px green solid;
-    box-shadow: 6px 6px 18px #7e937f;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/beachPhoto.jpg);
-        background-size: cover;
+  color: white;
+  padding: 15px;
+  margin: 25px;
+  border: 1px green solid;
+  box-shadow: 6px 6px 18px #7e937f;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url(./Images/beachPhoto.jpg);
+  background-size: cover;
 }
 
 .cardNT {
-    color: white;
-    padding: 15px;
-    margin: 25px;
-    border: 1px green solid;
-    box-shadow: 6px 6px 18px #7e937f;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/NorthTura.jpg);
-        background-size: cover;
+  color: white;
+  padding: 15px;
+  margin: 25px;
+  border: 1px green solid;
+  box-shadow: 6px 6px 18px #7e937f;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url(./Images/NorthTura.jpg);
+  background-size: cover;
 }
 
 .cardDC {
-    color: white;
-    padding: 15px;
-    margin: 25px;
-    border: 1px green solid;
-    box-shadow: 6px 6px 18px #7e937f;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/DolphinCove.jpg);
-        background-size: cover;
+  color: white;
+  padding: 15px;
+  margin: 25px;
+  border: 1px green solid;
+  box-shadow: 6px 6px 18px #7e937f;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url(./Images/DolphinCove.jpg);
+  background-size: cover;
 }
 
 .cardBB {
-    color: white;
-    padding: 15px;
-    margin: 25px;
-    border: 1px green solid;
-    box-shadow: 6px 6px 18px #7e937f;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/BarBeach.jpg);
-        background-size: cover;
+  color: white;
+  padding: 15px;
+  margin: 25px;
+  border: 1px green solid;
+  box-shadow: 6px 6px 18px #7e937f;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url(./Images/BarBeach.jpg);
+  background-size: cover;
 }
 
 .cardM {
-    color: white;
-    padding: 15px;
-    margin: 25px;
-    border: 1px green solid;
-    box-shadow: 6px 6px 18px #7e937f;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)) ,url(./Images/Main.jpg);
-        background-size: cover;
+  color: white;
+  padding: 15px;
+  margin: 25px;
+  border: 1px green solid;
+  box-shadow: 6px 6px 18px #7e937f;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+    url(./Images/Main.jpg);
+  background-size: cover;
 }
 
 .card h3 {
-    line-height: 2em;
-    color: rgb(216, 216, 216);
+  line-height: 2em;
+  color: rgb(216, 216, 216);
 }
 
 .card p {
-    line-height: 1.5em;
-    color: white;
+  line-height: 1.5em;
+  color: white;
 }
 
 #map {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    height: 400px;
-    width: 100%;
-    max-width: 800px; 
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  height: 400px;
+  width: 100%;
+  max-width: 800px;
 }
 
 .footer {
-    color: white;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    padding: 2em;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 2em;
 }
 
 .footer p {
-    font-size: 1.25rem;
-	line-height: 1.25rem;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
 }
 
 .footer a {
-    color: white;
+  color: white;
 }
 
 @media (max-width: 991.98px) {
-    body {
-        background-attachment: fixed;
-    }
-    .hero {
-        justify-content: space-between;
-    }
+  body {
+    background-attachment: fixed;
+  }
+  .hero {
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 575.98px) {
-    .hero {
-        justify-content: space-between;
-    }
-    .hero h1 {
-        font-size: 1.35em;
-        padding: 24px 27px;
-    }
-    .nav {
-        margin-top: -10px;
-    }
-    .weatherContainer {
-        max-width: 339px;
-        box-shadow: white 0px 0px 9px 6px;
-        padding: 1.75em;
-        margin-top: 1.5em;
-    }
-    .temperature {
-        line-height: 1.5em;
-        font-size: 2.25em;
-    }
-    .recomendation {
-        margin: 0;
-        padding: 1em 2em;
-    }
-    .protected {
-        line-height: 1.5em;
-        font-size: 1em;
-    }
-    .beaches {
-        font-size: 1.1em;
-        line-height: 1.5em;
-    }
-    .containerList {
-        display: flex;
-        flex-direction: column;
-    }
+  .hero {
+    justify-content: space-between;
+  }
+  .hero h1 {
+    font-size: 1.35em;
+    padding: 24px 27px;
+  }
+  .nav {
+    margin-top: -10px;
+  }
+  .weatherContainer {
+    max-width: 339px;
+    box-shadow: white 0px 0px 9px 6px;
+    padding: 1.75em;
+    margin-top: 1.5em;
+  }
+  .temperature {
+    line-height: 1.5em;
+    font-size: 2.25em;
+  }
+  .recomendation {
+    margin: 0;
+    padding: 1em 2em;
+  }
+  .protected {
+    line-height: 1.5em;
+    font-size: 1em;
+  }
+  .beaches {
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+  .containerList {
+    display: flex;
+    flex-direction: column;
+  }
 }
