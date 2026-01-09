@@ -1,103 +1,366 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Protected Beaches Merimbula</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <nav class="navBeaches">
-        <div class="logo"><a href="index.html">LOGO</a></div>
-        <div class="navMenu">
-            <ul class="menu">
-                <li><a href="#">Beaches</a></li>
-            </ul>
-        </div>
+      <div class="logo">
+        <a href="index.html"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            width="50px"
+            height="50px"
+            viewBox="0 0 200 200"
+            style="
+              shape-rendering: geometricPrecision;
+              text-rendering: geometricPrecision;
+              image-rendering: optimizeQuality;
+              fill-rule: evenodd;
+              clip-rule: evenodd;
+            "
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <g>
+              <path
+                style="opacity: 0"
+                fill="black"
+                d="M -0.5,-0.5 C 21.1667,-0.5 42.8333,-0.5 64.5,-0.5C 50.5705,9.05053 35.2372,11.8839 18.5,8C 13.6075,6.64881 8.94081,4.81548 4.5,2.5C 2.57749,3.09238 0.910828,4.09238 -0.5,5.5C -0.5,3.5 -0.5,1.5 -0.5,-0.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 0"
+                fill="black"
+                d="M 67.5,-0.5 C 89.1667,-0.5 110.833,-0.5 132.5,-0.5C 132.5,1.5 132.5,3.5 132.5,5.5C 131.089,4.09238 129.423,3.09238 127.5,2.5C 110.454,10.5523 93.1208,11.3857 75.5,5C 72.5932,3.39089 69.9266,1.55755 67.5,-0.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 1"
+                fill="black"
+                d="M 64.5,-0.5 C 65.5,-0.5 66.5,-0.5 67.5,-0.5C 69.9266,1.55755 72.5932,3.39089 75.5,5C 93.1208,11.3857 110.454,10.5523 127.5,2.5C 129.423,3.09238 131.089,4.09238 132.5,5.5C 132.5,36.8333 132.5,68.1667 132.5,99.5C 130.702,108.926 126.369,117.092 119.5,124C 107.477,132.015 94.8101,139.015 81.5,145C 76.5801,147.916 72.2467,151.582 68.5,156C 66.8333,156.667 65.1667,156.667 63.5,156C 55.758,147.604 46.4247,141.604 35.5,138C 27.6667,133.584 20.0001,128.918 12.5,124C 5.63145,117.092 1.29812,108.926 -0.5,99.5C -0.5,68.1667 -0.5,36.8333 -0.5,5.5C 0.910828,4.09238 2.57749,3.09238 4.5,2.5C 8.94081,4.81548 13.6075,6.64881 18.5,8C 35.2372,11.8839 50.5705,9.05053 64.5,-0.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 1"
+                fill="blue"
+                d="M 3.5,94.5 C 8.16667,93.8333 12.8333,93.1667 17.5,92.5C 23.6554,90.8365 29.6554,88.6698 35.5,86C 41.8277,84.0288 44.9943,86.1955 45,92.5C 40.9006,95.7227 38.5673,94.7227 38,89.5C 36.8333,94.8353 38.9999,97.1686 44.5,96.5C 44.2627,97.791 44.596,98.791 45.5,99.5C 50.6509,100.327 55.9842,100.827 61.5,101C 65.9801,102.072 69.6468,104.406 72.5,108C 88.8333,108.667 105.167,108.667 121.5,108C 122.774,107.023 122.774,106.189 121.5,105.5C 115.833,104.833 110.167,104.167 104.5,103.5C 104.5,102.5 104.5,101.5 104.5,100.5C 101.484,100.841 98.8175,102.007 96.5,104C 92.5,104.667 88.5,104.667 84.5,104C 82.0213,100.687 79.3546,97.5202 76.5,94.5C 77.6888,93.5713 79.0222,93.238 80.5,93.5C 80.67,92.1779 80.3366,91.0113 79.5,90C 76.5818,89.2839 73.9151,89.7839 71.5,91.5C 64.9513,90.8856 64.2846,89.0523 69.5,86C 76.2191,85.0167 82.2191,86.6833 87.5,91C 94.295,92.2732 100.295,90.6065 105.5,86C 110.705,84.9461 115.538,85.7794 120,88.5C 121.28,88.3865 122.113,87.7199 122.5,86.5C 119.236,82.7963 115.069,81.1296 110,81.5C 108.167,81.6667 106.333,81.8333 104.5,82C 100.745,84.7949 96.578,86.6282 92,87.5C 87.6481,86.1637 83.4814,84.3304 79.5,82C 71.5042,79.81 65.0042,81.9767 60,88.5C 60.5603,80.0365 63.3937,72.3698 68.5,65.5C 72.2034,68.5774 74.0368,72.5774 74,77.5C 75.3333,78.8333 76.6667,78.8333 78,77.5C 78.6667,75.5 78.6667,73.5 78,71.5C 76.8448,68.2087 75.5115,65.2087 74,62.5C 79.2722,63.9381 82.7722,67.2714 84.5,72.5C 85.6888,73.4287 87.0222,73.762 88.5,73.5C 87.7785,64.2773 82.7785,59.1107 73.5,58C 78.1366,54.9334 82.9699,54.7667 88,57.5C 89.9457,57.2373 90.6123,56.2373 90,54.5C 83.6349,49.254 77.3016,49.254 71,54.5C 69.5472,46.212 64.7138,41.5454 56.5,40.5C 56.3505,41.552 56.5172,42.552 57,43.5C 59.3333,45.1667 61.6667,46.8333 64,48.5C 65.1871,50.0444 65.5205,51.7111 65,53.5C 58.6379,49.5682 52.3045,49.5682 46,53.5C 45.5172,54.448 45.3505,55.448 45.5,56.5C 48.6663,56.2341 51.8329,55.9008 55,55.5C 57.8912,55.2596 60.3912,56.0929 62.5,58C 55.4195,58.5876 50.4195,62.0876 47.5,68.5C 47.4528,70.0004 48.1195,71.0004 49.5,71.5C 51.607,69.4698 53.607,67.3031 55.5,65C 58.2778,62.7423 61.2778,62.2423 64.5,63.5C 59.6976,70.4448 56.5309,78.1115 55,86.5C 50.6155,88.2539 46.7822,87.4206 43.5,84C 40.5,83.3333 37.5,83.3333 34.5,84C 28.3695,87.0671 22.0362,89.5671 15.5,91.5C 11.5483,92.2721 7.5483,92.6054 3.5,92.5C 3.5,63.8333 3.5,35.1667 3.5,6.5C 8.6764,8.57805 14.0097,10.4114 19.5,12C 36.1631,14.8952 51.6631,12.0619 66,3.5C 78.9229,12.1133 93.0896,14.9467 108.5,12C 115.308,10.6749 121.975,8.84161 128.5,6.5C 128.667,37.8351 128.5,69.1684 128,100.5C 126.663,109.007 122.83,116.174 116.5,122C 104.614,129.444 92.2803,136.111 79.5,142C 74.4123,145.083 69.9123,148.917 66,153.5C 62.0877,148.917 57.5877,145.083 52.5,142C 37.463,135.737 23.6297,127.57 11,117.5C 6.19205,110.607 3.69205,102.94 3.5,94.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 0"
+                fill="black"
+                d="M 3.5,6.5 C 3.5,35.1667 3.5,63.8333 3.5,92.5C 7.5483,92.6054 11.5483,92.2721 15.5,91.5C 15.8417,92.3382 16.5084,92.6716 17.5,92.5C 12.8333,93.1667 8.16667,93.8333 3.5,94.5C 2.16667,65.1667 2.16667,35.8333 3.5,6.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 1"
+                fill="black"
+                d="M 8.5,36.5 C 10.4974,40.6589 11.9974,44.9923 13,49.5C 10.4087,45.5599 8.90867,41.2265 8.5,36.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 0"
+                fill="black"
+                d="M 104.5,103.5 C 103.957,103.56 103.624,103.893 103.5,104.5C 109.463,105.496 115.463,105.829 121.5,105.5C 122.774,106.189 122.774,107.023 121.5,108C 105.167,108.667 88.8333,108.667 72.5,108C 69.6468,104.406 65.9801,102.072 61.5,101C 55.9842,100.827 50.6509,100.327 45.5,99.5C 45.5,98.5 45.5,97.5 45.5,96.5C 48.3854,96.8064 51.0521,96.4731 53.5,95.5C 53.5,94.1667 53.5,92.8333 53.5,91.5C 50.3637,90.9791 48.0304,91.9791 46.5,94.5C 45.5,94.8333 44.8333,95.5 44.5,96.5C 38.9999,97.1686 36.8333,94.8353 38,89.5C 38.5673,94.7227 40.9006,95.7227 45,92.5C 44.9943,86.1955 41.8277,84.0288 35.5,86C 29.6554,88.6698 23.6554,90.8365 17.5,92.5C 16.5084,92.6716 15.8417,92.3382 15.5,91.5C 22.0362,89.5671 28.3695,87.0671 34.5,84C 37.5,83.3333 40.5,83.3333 43.5,84C 46.7822,87.4206 50.6155,88.2539 55,86.5C 56.5309,78.1115 59.6976,70.4448 64.5,63.5C 61.2778,62.2423 58.2778,62.7423 55.5,65C 53.607,67.3031 51.607,69.4698 49.5,71.5C 48.1195,71.0004 47.4528,70.0004 47.5,68.5C 50.4195,62.0876 55.4195,58.5876 62.5,58C 60.3912,56.0929 57.8912,55.2596 55,55.5C 51.8329,55.9008 48.6663,56.2341 45.5,56.5C 45.3505,55.448 45.5172,54.448 46,53.5C 52.3045,49.5682 58.6379,49.5682 65,53.5C 65.5205,51.7111 65.1871,50.0444 64,48.5C 61.6667,46.8333 59.3333,45.1667 57,43.5C 56.5172,42.552 56.3505,41.552 56.5,40.5C 64.7138,41.5454 69.5472,46.212 71,54.5C 77.3016,49.254 83.6349,49.254 90,54.5C 90.6123,56.2373 89.9457,57.2373 88,57.5C 82.9699,54.7667 78.1366,54.9334 73.5,58C 82.7785,59.1107 87.7785,64.2773 88.5,73.5C 87.0222,73.762 85.6888,73.4287 84.5,72.5C 82.7722,67.2714 79.2722,63.9381 74,62.5C 75.5115,65.2087 76.8448,68.2087 78,71.5C 78.6667,73.5 78.6667,75.5 78,77.5C 76.6667,78.8333 75.3333,78.8333 74,77.5C 74.0368,72.5774 72.2034,68.5774 68.5,65.5C 63.3937,72.3698 60.5603,80.0365 60,88.5C 65.0042,81.9767 71.5042,79.81 79.5,82C 83.4814,84.3304 87.6481,86.1637 92,87.5C 96.578,86.6282 100.745,84.7949 104.5,82C 106.333,81.8333 108.167,81.6667 110,81.5C 115.069,81.1296 119.236,82.7963 122.5,86.5C 122.113,87.7199 121.28,88.3865 120,88.5C 115.538,85.7794 110.705,84.9461 105.5,86C 100.295,90.6065 94.295,92.2732 87.5,91C 82.2191,86.6833 76.2191,85.0167 69.5,86C 64.2846,89.0523 64.9513,90.8856 71.5,91.5C 73.9151,89.7839 76.5818,89.2839 79.5,90C 80.3366,91.0113 80.67,92.1779 80.5,93.5C 79.0222,93.238 77.6888,93.5713 76.5,94.5C 79.3546,97.5202 82.0213,100.687 84.5,104C 88.5,104.667 92.5,104.667 96.5,104C 98.8175,102.007 101.484,100.841 104.5,100.5C 104.5,101.5 104.5,102.5 104.5,103.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 1"
+                fill="yellow"
+                d="M 101.5,45.5 C 115.178,44.0122 121.344,50.0122 120,63.5C 116.485,70.9032 110.652,73.7366 102.5,72C 94.8782,68.1672 92.0448,62.0006 94,53.5C 96.0282,50.3078 98.5282,47.6411 101.5,45.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 1"
+                fill="yellow"
+                d="M 103.5,49.5 C 114.847,49.8797 118.347,55.213 114,65.5C 103.099,71.0501 97.7658,67.7168 98,55.5C 99.3597,52.9774 101.193,50.9774 103.5,49.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 1"
+                fill="#737373"
+                d="M 6.5,50.5 C 7.84781,51.5268 8.34781,52.8602 8,54.5C 6.81181,53.4366 6.31181,52.1033 6.5,50.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 1"
+                fill="#747474"
+                d="M 21.5,53.5 C 23.3084,53.4914 24.9751,53.9914 26.5,55C 24.4652,55.5986 22.7985,55.0986 21.5,53.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 1"
+                fill="#808080"
+                d="M 25.5,60.5 C 22.5448,60.0193 20.2115,58.5193 18.5,56C 19.1667,55.3333 19.8333,55.3333 20.5,56C 22.2395,57.517 23.9062,59.017 25.5,60.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 1"
+                fill="#777777"
+                d="M 25.5,60.5 C 29.3891,61.965 33.3891,62.465 37.5,62C 41.4441,60.0348 42.4441,57.0348 40.5,53C 39.2575,52.6886 38.2575,53.1886 37.5,54.5C 36.5714,52.6783 37.2381,51.3449 39.5,50.5C 44.9839,55.0818 44.6506,59.2484 38.5,63C 33.6964,64.0314 29.3631,63.1981 25.5,60.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 1"
+                fill="#22212a"
+                d="M 19.5,70.5 C 27.4699,70.4402 29.9699,74.1069 27,81.5C 21.0568,87.4801 13.8901,90.3134 5.5,90C 12.5383,88.8844 18.705,86.0511 24,81.5C 27.1483,75.232 25.4816,72.5653 19,73.5C 18.1368,75.7489 18.6368,77.5822 20.5,79C 17.0353,78.9428 15.8686,77.1095 17,73.5C 17.6979,72.3094 18.5313,71.3094 19.5,70.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 1"
+                fill="#111111"
+                d="M 104.5,89.5 C 107.607,89.3512 110.607,89.8512 113.5,91C 114.38,92.3561 114.714,93.8561 114.5,95.5C 111.729,93.9138 108.729,93.4138 105.5,94C 99.3446,101.282 92.0113,102.949 83.5,99C 82.1667,98 82.1667,97 83.5,96C 87.0233,97.0817 90.6899,97.4151 94.5,97C 98.0804,94.7226 101.414,92.2226 104.5,89.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 1"
+                fill="yellow"
+                d="M 53.5,95.5 C 50.9407,95.8016 48.6074,95.4682 46.5,94.5C 48.0304,91.9791 50.3637,90.9791 53.5,91.5C 53.5,92.8333 53.5,94.1667 53.5,95.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 1"
+                fill="yellow"
+                d="M 58.5,92.5 C 67.1948,93.1817 74.1948,97.0151 79.5,104C 77.8333,104.667 76.1667,104.667 74.5,104C 70.0602,99.6137 64.7269,97.1137 58.5,96.5C 58.5,95.1667 58.5,93.8333 58.5,92.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 1"
+                fill="#161616"
+                d="M 107.5,95.5 C 109.747,95.9153 111.914,96.5819 114,97.5C 116.092,97.121 118.092,96.4543 120,95.5C 121.28,95.6135 122.113,96.2801 122.5,97.5C 118.928,101.165 114.595,102.332 109.5,101C 106.767,99.7719 106.1,97.9386 107.5,95.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 1"
+                fill="#5c5966"
+                d="M 16.5,95.5 C 16.5,95.8333 16.5,96.1667 16.5,96.5C 12.5631,97.8802 8.56313,97.7136 4.5,96C 8.48617,95.5012 12.4862,95.3345 16.5,95.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 1"
+                fill="#949495"
+                d="M 46.5,94.5 C 48.6074,95.4682 50.9407,95.8016 53.5,95.5C 51.0521,96.4731 48.3854,96.8064 45.5,96.5C 45.5,97.5 45.5,98.5 45.5,99.5C 44.596,98.791 44.2627,97.791 44.5,96.5C 44.8333,95.5 45.5,94.8333 46.5,94.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 1"
+                fill="#74727d"
+                d="M 28.5,103.5 C 27.8333,102.833 27.1667,102.167 26.5,101.5C 27.2544,99.5541 28.5878,98.7207 30.5,99C 28.9632,100.11 28.2965,101.61 28.5,103.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 0"
+                fill="black"
+                d="M -0.5,99.5 C 1.29812,108.926 5.63145,117.092 12.5,124C 20.0001,128.918 27.6667,133.584 35.5,138C 46.4247,141.604 55.758,147.604 63.5,156C 65.1667,156.667 66.8333,156.667 68.5,156C 72.2467,151.582 76.5801,147.916 81.5,145C 94.8101,139.015 107.477,132.015 119.5,124C 126.369,117.092 130.702,108.926 132.5,99.5C 132.5,119.167 132.5,138.833 132.5,158.5C 88.1667,158.5 43.8333,158.5 -0.5,158.5C -0.5,138.833 -0.5,119.167 -0.5,99.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 1"
+                fill="#4c4c4c"
+                d="M 104.5,103.5 C 110.167,104.167 115.833,104.833 121.5,105.5C 115.463,105.829 109.463,105.496 103.5,104.5C 103.624,103.893 103.957,103.56 104.5,103.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 1"
+                fill="#1a1921"
+                d="M 26.5,101.5 C 27.1667,102.167 27.8333,102.833 28.5,103.5C 30.54,106.134 32.7067,106.134 35,103.5C 35.9657,98.1243 33.6323,95.4576 28,95.5C 24.1958,96.2048 20.3625,96.5381 16.5,96.5C 16.5,96.1667 16.5,95.8333 16.5,95.5C 20.3052,94.7333 24.1385,94.0666 28,93.5C 37.1463,94.1272 39.6463,98.4605 35.5,106.5C 29.9316,108.999 26.9316,107.333 26.5,101.5 Z"
+              />
+            </g>
+            <g>
+              <path
+                style="opacity: 1"
+                fill="#151515"
+                d="M 45.5,104.5 C 50.8437,104.334 56.1771,104.501 61.5,105C 62.3366,106.011 62.67,107.178 62.5,108.5C 56.8333,108.5 51.1667,108.5 45.5,108.5C 45.5,107.167 45.5,105.833 45.5,104.5 Z"
+              />
+            </g>
+          </svg>
+        </a>
+      </div>
+
+      <div class="navMenu">
+        <ul class="menu">
+          <li><a href="#">Beaches</a></li>
+        </ul>
+      </div>
     </nav>
     <main class="list">
-        <div class="containerList">
-            <div class="cardNT">
-                <h3>North Tura Beach</h3>
-                <p>Surfing, swimming, fishing, whale watching, bushwalking tracks, picnic table, toilets, 200m from carpark.<br><br/> 
+      <div class="containerList">
+        <div class="cardNT">
+          <h3>North Tura Beach</h3>
+          <p>
+            Surfing, swimming, fishing, whale watching, bushwalking tracks,
+            picnic table, toilets, 200m from carpark.<br /><br />
 
-                Accessible via Bournda National Park just north of Tura Beach.</p>
-            </div>
-            <div class="cardDC">
-                <h3>Dolphin Cove</h3>
-                <p>Surfing, swimming, fishing, whale watching, bushwalking tracks, picnic table, viewing platforms, 400m from carpark, dog friendly.<br/> <br/>
-
-                Accessible from Dolphin Cove residential area.</p>
-            </div>
-            <div class="card">
-                <h3>Tura Beach</h3>
-                <p>Surfing, swimming, fishing, whale watching, bushwalking tracks, picnic table, toilets, 200m from carpark, dog friendly.</p>
-            </div>
-            <div class="card">
-                <h3>Short Point Beach</h3>
-                <p>Surfing, swimming, fishing, whale watching, walking tracks, picnic table, toilets, viewing platform,150m from carpark, patrolled beach during holidays.  Leashed dog friendly except when the beach is patrolled then a 100m distance from the patrolled area is required.</p>
-            </div>
-            <div class="card">
-                <h3>Spencer Park</h3>
-                <p>Swimming, fishing, snorkeling, viewing areas, 50m from carpark or 100m from the street.  Parkland, toilets, shade, walking tracks up through Rotary Park and onto Bar Beach. BBQ's, picnic facilities, playground . A good choice for young children.</p>
-            </div>
-            <div class="card">
-                <h3>Mitchies Jetty</h3>
-                <p>Mitchies Jetty is a popular beach located on the lake side of Fishpen. It is easy to access by foot and has some parking available. It is also a great place to put in a kayak. Micthies Jetty is protected from Southerly winds.</p>
-            </div>
-            <div class="card">
-                <h3>Middle Beach</h3>
-                <p>Swimming, fishing, whale watching,  viewing areas, 300m from carpark down a track and of stairs.  Not a good choice for young children with quite a lot of stairs and often dangerous swell conditions.</p>
-            </div>
-            <div class="cardBB">
-                <h3>Bar Beach</h3>
-                <p>Swimming, fishing, surfing, snorkeling, whale watching up on the headland, viewing platforms, 20m from carpark.<br/> <br/>
-
-                Toilets, shade, walking tracks up through the headland,  BBQ's, picnic facilities . A good choice for young children.</p>
-            </div>
-            <div class="cardM">
-                <h3>Main Beach</h3>
-                <p>Swimming, fishing, surfing, snorkeling, whale watching, viewing platforms, 20m from carpark.  Toilets, shade, beach walking,  BBQ's, picnic facilities, large adventure playground, sports oval.<br/> <br/>
-
-                Patrolled during holidays, a good choice for young children.  Off leash dog friendly in certain areas.</p>
-            </div>
-            <div class="card">
-                <h3>Pambula Beach</h3>
-                <p>Swimming, fishing, surfing, snorkeling, whale watching, viewing platforms, 20m from carpark.<br/> <br/>
-
-                Toilets, beach walking,  walking tracks over the headland, BBQ's, picnic facilities. Patrolled Beach during holidays, a good choice for young children. </p>
-            </div>
-            <div class="card">
-                <h3>Lions Park Beach</h3>
-                <p>Swimming, fishing, surfing, snorkeling, whale watching, viewing platforms, 20m from carpark.<br/> <br/>
-
-                Toilets, shade, beach walking,  playground, walking tracks over the headland, BBQ's, picnic facilities, off-leash dog friendly.</p>
-            </div>
-            <div class="card">
-                <h3>Bar Mouth Beach</h3>
-                <p>Swimming, fishing, surfing, snorkeling, whale watching, 200m from carpark with stairs and track.  Shade, beach walking,  bushwalking tracks through the National Park and towards Haycock Point.<br/> <br/>
-
-                 Accessible from Ben Boyd National Park.  Take water & sunscreen..</p>
-            </div>
-            <div class="card">
-                <h3>Pambula Rivermouth</h3>
-                <p>Swimming, fishing, surfing, snorkeling, whale watching, viewing platforms up on the headland, 20m from carpark. <br/> <br/>
-
-                Toilets, shade, beach walking,  playground, walking tracks over the headland and up the river, picnic facilities.</p>
-            </div>
-            <div class="card">
-                <h3>Severs Beach</h3>
-                <p>Swimming, fishing, snorkeling, 700m from carpark with walking track.  Take water & sunscreen.<br/> <br/>
-                    
-                Accessible from Ben Boyd National Park.</p>
-            </div>
+            Accessible via Bournda National Park just north of Tura Beach.
+          </p>
         </div>
+        <div class="cardDC">
+          <h3>Dolphin Cove</h3>
+          <p>
+            Surfing, swimming, fishing, whale watching, bushwalking tracks,
+            picnic table, viewing platforms, 400m from carpark, dog friendly.<br />
+            <br />
+
+            Accessible from Dolphin Cove residential area.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Tura Beach</h3>
+          <p>
+            Surfing, swimming, fishing, whale watching, bushwalking tracks,
+            picnic table, toilets, 200m from carpark, dog friendly.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Short Point Beach</h3>
+          <p>
+            Surfing, swimming, fishing, whale watching, walking tracks, picnic
+            table, toilets, viewing platform,150m from carpark, patrolled beach
+            during holidays. Leashed dog friendly except when the beach is
+            patrolled then a 100m distance from the patrolled area is required.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Spencer Park</h3>
+          <p>
+            Swimming, fishing, snorkeling, viewing areas, 50m from carpark or
+            100m from the street. Parkland, toilets, shade, walking tracks up
+            through Rotary Park and onto Bar Beach. BBQ's, picnic facilities,
+            playground . A good choice for young children.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Mitchies Jetty</h3>
+          <p>
+            Mitchies Jetty is a popular beach located on the lake side of
+            Fishpen. It is easy to access by foot and has some parking
+            available. It is also a great place to put in a kayak. Micthies
+            Jetty is protected from Southerly winds.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Middle Beach</h3>
+          <p>
+            Swimming, fishing, whale watching, viewing areas, 300m from carpark
+            down a track and of stairs. Not a good choice for young children
+            with quite a lot of stairs and often dangerous swell conditions.
+          </p>
+        </div>
+        <div class="cardBB">
+          <h3>Bar Beach</h3>
+          <p>
+            Swimming, fishing, surfing, snorkeling, whale watching up on the
+            headland, viewing platforms, 20m from carpark.<br />
+            <br />
+
+            Toilets, shade, walking tracks up through the headland, BBQ's,
+            picnic facilities . A good choice for young children.
+          </p>
+        </div>
+        <div class="cardM">
+          <h3>Main Beach</h3>
+          <p>
+            Swimming, fishing, surfing, snorkeling, whale watching, viewing
+            platforms, 20m from carpark. Toilets, shade, beach walking, BBQ's,
+            picnic facilities, large adventure playground, sports oval.<br />
+            <br />
+
+            Patrolled during holidays, a good choice for young children. Off
+            leash dog friendly in certain areas.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Pambula Beach</h3>
+          <p>
+            Swimming, fishing, surfing, snorkeling, whale watching, viewing
+            platforms, 20m from carpark.<br />
+            <br />
+
+            Toilets, beach walking, walking tracks over the headland, BBQ's,
+            picnic facilities. Patrolled Beach during holidays, a good choice
+            for young children.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Lions Park Beach</h3>
+          <p>
+            Swimming, fishing, surfing, snorkeling, whale watching, viewing
+            platforms, 20m from carpark.<br />
+            <br />
+
+            Toilets, shade, beach walking, playground, walking tracks over the
+            headland, BBQ's, picnic facilities, off-leash dog friendly.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Bar Mouth Beach</h3>
+          <p>
+            Swimming, fishing, surfing, snorkeling, whale watching, 200m from
+            carpark with stairs and track. Shade, beach walking, bushwalking
+            tracks through the National Park and towards Haycock Point.<br />
+            <br />
+
+            Accessible from Ben Boyd National Park. Take water & sunscreen..
+          </p>
+        </div>
+        <div class="card">
+          <h3>Pambula Rivermouth</h3>
+          <p>
+            Swimming, fishing, surfing, snorkeling, whale watching, viewing
+            platforms up on the headland, 20m from carpark. <br />
+            <br />
+
+            Toilets, shade, beach walking, playground, walking tracks over the
+            headland and up the river, picnic facilities.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Severs Beach</h3>
+          <p>
+            Swimming, fishing, snorkeling, 700m from carpark with walking track.
+            Take water & sunscreen.<br />
+            <br />
+
+            Accessible from Ben Boyd National Park.
+          </p>
+        </div>
+      </div>
     </main>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
